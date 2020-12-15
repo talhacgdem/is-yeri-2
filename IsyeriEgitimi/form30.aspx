@@ -1,0 +1,199 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="form30.aspx.cs" Inherits="IsyeriEgitimi.resim.form30" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="form.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Form 30</title>
+    <link href="form.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+</head>
+<body>
+     
+    
+   <div class="container" id="wrapper">
+
+        <div class="container-fluid mt-2" id="ust">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <img src="resim/logo.jpg" />
+                </div>
+                <div class="col-8 font-weight-bold text-center">T.C. FIRAT ÜNİVERSİTESİ<br /> FEN BİLİMLERİ ENSTİTÜSÜ<br /> YÜKSEK LİSANS TEZ KONUSU ÖNERİ FORMU</div>
+                <div class="col-2">
+                    <div class="float-right"><img src="resim/form30.jpg" /></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid" id="alt">
+            <div class="text-center mt-2">
+                
+                <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                ANABİLİM DALI BAŞKANLIĞI
+            </div>
+            <div class="row">
+                <div class="col mt-2">Karar Tarihi<input type="date" id="KararTarih" name="KararTarih"></div>
+                <div class="col mt-2"><div class="float-right">Sayı <input type="text" id="KararSayi" name="KararSayi" value="25" runat="server"></div></div>
+            </div>
+            <table class="table-borderless mt-2">
+                    <tbody>
+                    <tr>
+                        <th class="row justify-content-center" >FEN BİLİMLERİ ENSTİTÜSÜ MÜDÜRLÜĞÜNE</th>
+                    </tr>
+
+               
+                    <tr>
+                        <td>Anabilim Dalımız yüksek lisans öğrencisinin danışmanı ile birlikte önerdiği tez 
+                            konusu aşağıda verilmiş olup tez çalışmalarının Anabilim Dalımız bünyesinde
+                            yürütülmesinin uygun olduğuna ve konunun Enstitüye arzına <strong> oybirliği <input type="CheckBox" id="CheckBoxOy"> / oyçokluğu 
+                            <input type="text" id="TextBoxOy"> / <input type="text" id="TextBoxOy2"></strong> ile karar verilmiştir.</td>
+                    </tr>
+                  </tbody>
+            </table><br /><br />
+            <div class="row">
+                <div class="col-8">
+                        Önerildiği şekliyle kabul edilmiştir ..................... <input type="CheckBox" id="CheckBoxOneri"><br />
+                        Düzeltme yapıldıktan sonra kabul edilmiştir<input type="CheckBox" id="CheckBoxDuzeltme" >
+                </div>                  
+                <div class="col-4">
+                    <div class="text-center">
+                           İmza<br />
+                           Unvan Adı SOYADI<br />
+                            Anabilim Dalı Başkanı</div>
+                </div>
+            </div>
+           
+            </div> 
+        <div class="container-fluid" id="ogrenci">
+                <div class="row border border-dark"><div class="font-weight-bold">I - ÖĞRENCİ BİLGİLERİ</div></div>
+                 <div class="row">
+                     <div class="col-2 border border-dark basliklar">Adı ve Soyadı</div>
+                           <div class="col-6 border border-dark"></div>
+                            <div class="col-4 border border-dark">İmza:</div>
+                  </div>
+                <div class="row"><div class="col-2 border border-dark basliklar">Öğrenci No</div>
+                <div class="col-10 border border-dark"></div></div>
+                <div class="row"><div class="col-2 border border-dark basliklar">Bilim Dalı</div>
+                <div class="col-10 border border-dark"></div></div>
+                <div class="row">
+                    <div class="col-2 border border-dark basliklar">Danışman</div>
+                           <div class="col-6 border border-dark"></div>
+                            <div class="col-4 border border-dark">İmza:</div>
+                </div>
+                        
+                </div>
+        <div class="container-fluid" id="tez">
+            <div class="row border border-dark"><div class="font-weight-bold">II - TEZ KONUSU BİLGİLERİ</div></div>
+            <div class="row border border-dark">
+                <div class="col"><div class="text-center"><input type="CheckBox" id="CheckBoxTeklif">İlk Teklif</div></div>
+                <div class="col"><input type="CheckBox" id="CheckBoxDegisiklik">Değişiklik (Gerekçe ayrıca verilmelidir)</div>
+            </div>
+            <div class="row"><div class="col-2 border border-dark basliklar" >Türkçe Tez Başlığı</div><div class="col-10 border border-dark"></div></div>
+            <div class="row"><div class="col-2 border border-dark basliklar" >Anahtar Kelimeler (En fazla 5 adet)
+
+                             </div><div class="col-10 border border-dark"></div></div>
+            <div class="row"><div class="col-2 border border-dark basliklar">İngilizce Tez Başlığı</div><div class="col-10 border border-dark"></div></div>
+            <div class="row"><div class="col-2 border border-dark basliklar">Tez Yazım Dili</div>
+                <div class="col-2 border-bottom border-top border-left border-dark check">Türkçe <<input type="CheckBox" id="Turkce"></div>
+                <div class="col-2 border-bottom border-top border-dark check">İngilizce<input type="CheckBox" id="Ingilizce"></div>
+                <div class="col-6 border-right border-bottom border-top border-dark"></div>
+            </div>
+            <div class="row"><div class="col-2 border border-dark basliklar">Çalışma Tarzı</div>
+                 <div class="col-2 border-left border-bottom border-top border-dark check">Deneysel <input type="CheckBox" id="Deney"></div>
+                <div class="col-1 border-bottom border-top border-dark check">Teorik<input type="CheckBox" id="Teorik"></div>
+                 <div class="col-2 border-bottom border-top border-dark check">Simülasyon<input type="CheckBox" id="Simulasyon"></div>
+                <div class="col-3 border-bottom border-top border-dark check">Sistem/Araç/Yazılım Geliştirme <input type="CheckBox" id="Sistem"></div>
+                 <div class="col-2 border-bottom border-top border-right border-dark check">Saha Analizi <input type="CheckBox" id="Saha"></div>
+                
+            </div>
+            <div class="row"><div class="col-2 border border-dark basliklar">Endüstri Alanı</div>
+                <div class="col-5 border border-dark font-weight-bold"> A. </div>
+                <div class="col-5 border border-dark font-weight-bold"> B. </div>
+           </div>
+            <div class="row">
+                <div class="col-2  border border-dark basliklar">EKLERİ</div>
+                <div class="col-10 border border-dark">
+                    <div class="row">
+                        <div class="col-4">1.Etik Kurul İzni</div>
+                        <div class="col-4">Gerekmiyor <input type="CheckBox"> </div>
+                        <div class="col-4">Belge Var <input type="CheckBox"></div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4">2.Veri Kullanım İzni</div>
+                        <div class="col-4">Gerekmiyor <input type="CheckBox"></div>
+                        <div class="col-4">Belge Var <input type="CheckBox"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">3.Kurum / Kuruluş İzni</div>
+                        <div class="col-4">Gerekmiyor <input type="CheckBox"></div>
+                        <div class="col-4">Belge Var <input type="CheckBox"></div>
+                    </div>
+                    <div class="row"><div class="col-12">4.Tez Konusu ve Planı (FORM-31)</div></div>
+                    <div class="row">
+                            <div class="col-7">5.Fikir Hak Sahipliği Beyanı(İsteğe Bağlı–FORM-32)</div>
+                            <div class="col-3">Gerekmiyor <input type="CheckBox"></div>
+                            <div class="col-2">Belge Var <input type="CheckBox"></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <div class="container-fluid" id="enstitu">
+            <div class="row border border-dark"><div class="font-weight-bold">III – ENSTİTÜ YÖNETİM KURULU KARARI</div></div>
+            <div class="row">
+                <div class="col-8 border border-dark">
+                    <div class="row"><div class="col text-lg-center">Öğrenci Derslerini</div></div>
+                    <div class="row"><u>Enstitü Öğrenci İşleri</u></div>
+                    <div class="row"><div class="col text-lg-right">Tamamlamıştır <input type="CheckBox"></div></div>
+                    <div class="row"><div class="col text-lg-right">Tamamlamamıştır <input type="CheckBox"></div></div>
+                    <div class="row">Karar Tarihi:  ____/____/20____       Karar No:</div>
+
+                </div>
+                <div class="col-4 border border-dark text-lg-center">
+                    İmza<br /><br /><br /><br />Enstitü Müdürü
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="container-fluid mb-2" id="aciklama">
+            <div class="row">
+                <div class="col border border-dark">
+                    <strong>AÇIKLAMA</strong><br />
+                    <strong>1.</strong>	Tez Konusu ve Planı Formunda <strong>(FORM-31)</strong> hiçbir alan boş bırakılmamalıdır.<br />
+                    <strong>2.</strong>	Tez Dili İngilizce olan öneriler için FORM-31 İngilizce olarak doldurulmalıdır.<br />
+                    <strong>3.</strong>	Form ve ekleri<strong> anabilim dalı kurul kararı ile birlikte</strong> üst yazı ekinde Enstitüye iletilmelidir.
+
+                </div>
+            </div>
+        </div>
+
+
+            
+                
+        </div>
+
+        
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <form id="form1" runat="server">
+    <div>
+    <asp:button runat="server" text="Button" OnClick="Unnamed1_Click" />
+
+    </div>
+        </form>
+</body>
+
+</html>
