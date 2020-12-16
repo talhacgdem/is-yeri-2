@@ -94,7 +94,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="form32.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="form30.aspx" />
+    <Content Include="form31.aspx" />
+    <Content Include="ogrenci.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -109,25 +112,21 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="form.css" />
-    <Content Include="form30.aspx" />
     <Content Include="resim\form30.jpg" />
+    <Content Include="resim\form31.jpg" />
     <Content Include="resim\logo.jpg" />
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="css\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="form32.aspx.cs">
-      <DependentUpon>form32.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="form32.aspx.designer.cs">
-      <DependentUpon>form32.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="form30.aspx.cs">
       <DependentUpon>form30.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,12 +134,29 @@
     <Compile Include="form30.aspx.designer.cs">
       <DependentUpon>form30.aspx</DependentUpon>
     </Compile>
+    <Compile Include="form31.aspx.cs">
+      <DependentUpon>form31.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form31.aspx.designer.cs">
+      <DependentUpon>form31.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci.aspx.cs">
+      <DependentUpon>ogrenci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrenci.aspx.designer.cs">
+      <DependentUpon>ogrenci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlbaglantisi.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="dosyalar\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

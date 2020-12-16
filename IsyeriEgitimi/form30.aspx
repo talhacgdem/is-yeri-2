@@ -1,20 +1,134 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="form30.aspx.cs" Inherits="IsyeriEgitimi.resim.form30" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="form30.aspx.cs" Inherits="IsyeriEgitimi.form32" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".test input:checkbox").on('change', function () {
+                $(".test input:checkbox").not(this).prop('checked', false);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".degisiklik input:checkbox").on('change', function () {
+                $(".degisiklik input:checkbox").not(this).prop('checked', false);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".dil input:checkbox").on('change', function () {
+                $(".dil input:checkbox").not(this).prop('checked', false);
+            });
+        });
+
+   
+
+        $(document).ready(function () {
+            $(".fikir input:checkbox").on('change', function () {
+                $(".fikir input:checkbox").not(this).prop('checked', false);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".kurum input:checkbox").on('change', function () {
+                $(".kurum input:checkbox").not(this).prop('checked', false);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".veri input:checkbox").on('change', function () {
+                $(".veri input:checkbox").not(this).prop('checked', false);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".etik input:checkbox").on('change', function () {
+                $(".etik input:checkbox").not(this).prop('checked', false);
+            });
+        });
+        $(document).ready(function () {
+            $(".tamamlama input:checkbox").on('change', function () {
+                $(".tamamlama input:checkbox").not(this).prop('checked', false);
+            });
+        }); 
+
+        $(document).ready(function () {
+            $(".calismaTarzi input:checkbox").on('change', function () {
+                $(".calismaTarzi input:checkbox").not(this).prop('checked', false);
+            });
+        });
+
+
+        $(document).ready(function()
+    {
+        $('#<%= chkbelgevarEtik.ClientID %>').click(function() { $('#divTest').show(); });
+        $('#<%= chkGerekmiyorEtik.ClientID %>').click(function() { $('#divTest').hide(); });
+
+        });
+        
+        $(document).ready(function()
+    {
+            $('#<%= chkveri.ClientID %>').click(function () { $('#divVeri').show(); });
+            $('#<%= chkGerekmiyorVeri.ClientID %>').click(function () { $('#divVeri').hide(); });
+
+        });
+        
+        $(document).ready(function()
+    {
+            $('#<%= chkbelgevarkurum.ClientID %>').click(function () { $('#divKurum').show(); });
+            $('#<%=  chkGerekmiyorkurum.ClientID %>').click(function () { $('#divKurum').hide(); });
+
+        });
+        
+        $(document).ready(function()
+    {
+            $('#<%= chkbelgevarFikir.ClientID %>').click(function () { $('#divFikir').show(); });
+            $('#<%= chkGerekmiyorFikir.ClientID %>').click(function () { $('#divFikir').hide(); });
+
+    });
+    </script>
+    <script type = "text/javascript">
+        function PrintPanel() {
+            var panel = document.getElementById("<%=Panel1.ClientID %>");
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write('<html><head>');
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(panel.innerHTML);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            setTimeout(function () {
+                printWindow.print();
+            }, 500);
+            return false;
+        }
+    </script>
+    <style type="text/css">
+        .auto-style1 {
+            position: relative;
+            width: 100%;
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            left: 0px;
+            top: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .auto-style2 {
+            margin-left: 492;
+        }
+    </style>
     <link href="form.css" rel="stylesheet" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>Form 30</title>
-    <link href="form.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
 </head>
 <body>
-     
-    
-   <div class="container" id="wrapper">
+    <form id="form1" runat="server">
+        <asp:Panel ID="Panel1" runat="server">
+    <div class="container" id="wrapper">
 
         <div class="container-fluid mt-2" id="ust">
             <div class="row align-items-center">
@@ -32,12 +146,45 @@
         <div class="container-fluid" id="alt">
             <div class="text-center mt-2">
                 
-                <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="DropDownList1" runat="server" Width="194px">
+                    <asp:ListItem>Adli Bilişim Mühendisliği	</asp:ListItem>
+                    <asp:ListItem>Bilgisayar Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Biyoloji</asp:ListItem>
+                    <asp:ListItem>Biyomühendislik</asp:ListItem>
+                    <asp:ListItem>Biyoteknoloji  (Disiplinlerarası)</asp:ListItem>
+                    <asp:ListItem>Çevre Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Ekobilişim (Disiplinlerarası)	</asp:ListItem>
+                    <asp:ListItem>Elektrik-Elektronik Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Elektrik-Elektronik Mühendisliği Teknolojileri</asp:ListItem>
+                    <asp:ListItem>Enerji Sistemleri Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Fizik</asp:ListItem>
+                    <asp:ListItem>İnşaat Mühendisliği</asp:ListItem>
+                    <asp:ListItem>İnşaat Mühendisliği Teknolojileri</asp:ListItem>
+                    <asp:ListItem>İstatistik</asp:ListItem>
+                    <asp:ListItem>İş ve Mühendislik Yönetimi (Disiplinlerarası)               	</asp:ListItem>
+                    <asp:ListItem>Jeodezi ve Coğrafi Bilgi Teknolojileri (Disiplinlerarası) 	</asp:ListItem>
+                    <asp:ListItem>Jeoloji Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Kimya</asp:ListItem>
+                    <asp:ListItem>Kimya Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Makine Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Makine Mühendisliği Teknolojileri</asp:ListItem>
+                    <asp:ListItem>Matematik</asp:ListItem>
+                    <asp:ListItem>Mekatronik Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Metalurji ve Malzeme Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Metalurji ve Malzeme Mühendisliği Teknolojileri</asp:ListItem>
+                    <asp:ListItem>Mimarlık</asp:ListItem>
+                    <asp:ListItem>Otomotiv Mühendisliği</asp:ListItem>
+                    <asp:ListItem>Savunma Teknolojileri (Disiplinlerarası)</asp:ListItem>
+                    <asp:ListItem>Su Ürünleri Avlama ve İşleme Teknolojisi</asp:ListItem>
+                    <asp:ListItem>Su Ürünleri Temel Bilimler</asp:ListItem>
+                    <asp:ListItem>Su Ürünleri Yetiştiriciliği</asp:ListItem>
+                    <asp:ListItem>Yazılım Mühendisliği</asp:ListItem>
+                </asp:DropDownList>
                 ANABİLİM DALI BAŞKANLIĞI
             </div>
             <div class="row">
                 <div class="col mt-2">Karar Tarihi<input type="date" id="KararTarih" name="KararTarih"></div>
-                <div class="col mt-2"><div class="float-right">Sayı <input type="text" id="KararSayi" name="KararSayi" value="25" runat="server"></div></div>
+                <div class="col mt-2"><div class="float-right">Sayı <input type="text" id="KararSayi" name="KararSayi"  runat="server"></div></div>
             </div>
             <table class="table-borderless mt-2">
                     <tbody>
@@ -49,15 +196,18 @@
                     <tr>
                         <td>Anabilim Dalımız yüksek lisans öğrencisinin danışmanı ile birlikte önerdiği tez 
                             konusu aşağıda verilmiş olup tez çalışmalarının Anabilim Dalımız bünyesinde
-                            yürütülmesinin uygun olduğuna ve konunun Enstitüye arzına <strong> oybirliği <input type="CheckBox" id="CheckBoxOy"> / oyçokluğu 
-                            <input type="text" id="TextBoxOy"> / <input type="text" id="TextBoxOy2"></strong> ile karar verilmiştir.</td>
+                            yürütülmesinin uygun olduğuna ve konunun Enstitüye arzına <strong> oybirliği 
+                            <asp:CheckBox ID="CheckBox1" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" />
+                            &nbsp;/ oyçokluğu
+                            <input id="TextBoxOy" name="TextBoxOy" type="text"> /
+                            <input id="TextBoxOy2" name="TextBoxOy2" type="text"></input></input></strong> ile karar verilmiştir.</td>
                     </tr>
                   </tbody>
             </table><br /><br />
             <div class="row">
                 <div class="col-8">
-                        Önerildiği şekliyle kabul edilmiştir ..................... <input type="CheckBox" id="CheckBoxOneri"><br />
-                        Düzeltme yapıldıktan sonra kabul edilmiştir<input type="CheckBox" id="CheckBoxDuzeltme" >
+                        Önerildiği şekliyle kabul edilmiştir .....................<asp:CheckBox ID="chkKabulEdildi" Text="" runat="server" Class="test" OnCheckedChanged="chkKabulEdildi_CheckedChanged"></asp:CheckBox><br />
+                        Düzeltme yapıldıktan sonra kabul edilmiştir<asp:CheckBox ID="chkDuzeltmeYapildiKabulEdildi" Text="" runat="server" Class="test" OnCheckedChanged="chkDuzeltmeYapildiKabulEdildi_CheckedChanged"></asp:CheckBox>
                 </div>                  
                 <div class="col-4">
                     <div class="text-center">
@@ -72,16 +222,27 @@
                 <div class="row border border-dark"><div class="font-weight-bold">I - ÖĞRENCİ BİLGİLERİ</div></div>
                  <div class="row">
                      <div class="col-2 border border-dark basliklar">Adı ve Soyadı</div>
-                           <div class="col-6 border border-dark"></div>
+                           <div class="col-6 border border-dark"><asp:TextBox ID="txtOgrenciAdSoyad" runat="server" BorderWidth="0px" Width="450px" CssClass="auto-style2"></asp:TextBox>
+</div>
                             <div class="col-4 border border-dark">İmza:</div>
                   </div>
                 <div class="row"><div class="col-2 border border-dark basliklar">Öğrenci No</div>
-                <div class="col-10 border border-dark"></div></div>
+                <div class="col-10 border border-dark">
+                    <asp:TextBox ID="txtOgrenciNo" runat="server" BorderWidth="0px" Width="559px"></asp:TextBox>
+
+                </div></div>
                 <div class="row"><div class="col-2 border border-dark basliklar">Bilim Dalı</div>
-                <div class="col-10 border border-dark"></div></div>
+                <div class="col-10 border border-dark">
+                                        <asp:TextBox ID="txtBilimDali" runat="server" BorderWidth="0px" Width="558px"></asp:TextBox>
+
+                
+                </div></div>
                 <div class="row">
                     <div class="col-2 border border-dark basliklar">Danışman</div>
-                           <div class="col-6 border border-dark"></div>
+                           <div class="col-6 border border-dark">
+                    <asp:TextBox ID="txtDanisman" runat="server" BorderWidth="0px" Width="555px"></asp:TextBox>
+
+                    </div>
                             <div class="col-4 border border-dark">İmza:</div>
                 </div>
                         
@@ -89,55 +250,124 @@
         <div class="container-fluid" id="tez">
             <div class="row border border-dark"><div class="font-weight-bold">II - TEZ KONUSU BİLGİLERİ</div></div>
             <div class="row border border-dark">
-                <div class="col"><div class="text-center"><input type="CheckBox" id="CheckBoxTeklif">İlk Teklif</div></div>
-                <div class="col"><input type="CheckBox" id="CheckBoxDegisiklik">Değişiklik (Gerekçe ayrıca verilmelidir)</div>
+                <div class="col"><div class="text-center">
+                    <asp:CheckBox ID="chkilkteklif" runat="server" Class="degisiklik" Text="İlk Teklif" OnCheckedChanged="chkilkteklif_CheckedChanged" />
+                    </div></div>
+                <div class="col">
+                    <asp:CheckBox ID="chkdegisiklik" runat="server" Class="degisiklik" Text="Değişiklik (Gerekçe ayrıca verilmelidir)" OnCheckedChanged="chkdegisiklik_CheckedChanged" />
+                    </div>
             </div>
-            <div class="row"><div class="col-2 border border-dark basliklar" >Türkçe Tez Başlığı</div><div class="col-10 border border-dark"></div></div>
+            <div class="row"><div class="col-2 border border-dark basliklar" >Türkçe Tez Başlığı</div><div class="col-10 border border-dark">
+                    <asp:TextBox ID="txtTezBasligi" runat="server" BorderWidth="0px" Width="648px"></asp:TextBox>
+
+                </div></div>
             <div class="row"><div class="col-2 border border-dark basliklar" >Anahtar Kelimeler (En fazla 5 adet)
 
-                             </div><div class="col-10 border border-dark"></div></div>
-            <div class="row"><div class="col-2 border border-dark basliklar">İngilizce Tez Başlığı</div><div class="col-10 border border-dark"></div></div>
+                             </div><div class="col-10 border border-dark">
+                    <asp:TextBox ID="txtAnahtarKelime" runat="server" BorderWidth="0px" Width="647px"></asp:TextBox>
+
+                </div></div>
+            <div class="row"><div class="col-2 border border-dark basliklar">İngilizce Tez Başlığı</div><div class="col-10 border border-dark">
+                    <asp:TextBox ID="txtIngilzce" runat="server" BorderWidth="0px" Width="642px"></asp:TextBox>
+
+                </div></div>
             <div class="row"><div class="col-2 border border-dark basliklar">Tez Yazım Dili</div>
-                <div class="col-2 border-bottom border-top border-left border-dark check">Türkçe <<input type="CheckBox" id="Turkce"></div>
-                <div class="col-2 border-bottom border-top border-dark check">İngilizce<input type="CheckBox" id="Ingilizce"></div>
+                <div class="col-2 border-bottom border-top border-left border-dark check">Türkçe
+                    <asp:CheckBox ID="chkturkce" runat="server" Class="dil" OnCheckedChanged="chkturkce_CheckedChanged" />
+                </div>
+                <div class="col-2 border-bottom border-top border-dark check">İngilizce<asp:CheckBox ID="chkingilizce" runat="server" Class="dil" OnCheckedChanged="chkingilizce_CheckedChanged" />
+                </div>
                 <div class="col-6 border-right border-bottom border-top border-dark"></div>
             </div>
             <div class="row"><div class="col-2 border border-dark basliklar">Çalışma Tarzı</div>
-                 <div class="col-2 border-left border-bottom border-top border-dark check">Deneysel <input type="CheckBox" id="Deney"></div>
-                <div class="col-1 border-bottom border-top border-dark check">Teorik<input type="CheckBox" id="Teorik"></div>
-                 <div class="col-2 border-bottom border-top border-dark check">Simülasyon<input type="CheckBox" id="Simulasyon"></div>
-                <div class="col-3 border-bottom border-top border-dark check">Sistem/Araç/Yazılım Geliştirme <input type="CheckBox" id="Sistem"></div>
-                 <div class="col-2 border-bottom border-top border-right border-dark check">Saha Analizi <input type="CheckBox" id="Saha"></div>
+                 <div class="col-2 border-left border-bottom border-top border-dark check">Deneysel 
+                     <asp:CheckBox ID="chbCalismaTarzi"  runat="server" Class="calismaTarzi" OnCheckedChanged="chbCalismaTarzi_CheckedChanged" />
+                </div>
+                <div class="col-1 border-bottom border-top border-dark check" style="left: 0px; top: 0px">Teorik<asp:CheckBox ID="chbCalismaTeorik" runat="server"  Class="calismaTarzi" OnCheckedChanged="chbCalismaTeorik_CheckedChanged" />
+                </div>
+                 <div class="col-2 border-bottom border-top border-dark check">Simülasyon<asp:CheckBox ID="chbCalismaSimilasyon" runat="server"   Class="calismaTarzi" OnCheckedChanged="chbCalismaSimilasyon_CheckedChanged"/>
+                </div>
+                <div class="col-3 border-bottom border-top border-dark check" style="left: 0px; top: 0px">Sistem/Araç/Yazılım Geliştirme 
+                    <asp:CheckBox ID="chbCalismaSistemYazilim" runat="server"  Class="calismaTarzi" OnCheckedChanged="chbCalismaSistemYazilim_CheckedChanged" />
+                </div>
+                 <div class="col-2 border-bottom border-top border-right border-dark check">Saha Analizi 
+                     <asp:CheckBox ID="chbCalismaSaha" runat="server"  Class="calismaTarzi" OnCheckedChanged="chbCalismaSaha_CheckedChanged" />
+                </div>
                 
             </div>
             <div class="row"><div class="col-2 border border-dark basliklar">Endüstri Alanı</div>
-                <div class="col-5 border border-dark font-weight-bold"> A. </div>
-                <div class="col-5 border border-dark font-weight-bold"> B. </div>
+                <div class="col-5 border border-dark font-weight-bold"> A. 
+                    <asp:TextBox ID="txtEndistruA" runat="server" BorderWidth="0px" Width="648px"></asp:TextBox>
+
+                </div>
+                <div class="col-5 border border-dark font-weight-bold"> B. 
+                    <asp:TextBox ID="txtEndistruB" runat="server" BorderWidth="0px" Width="645px"></asp:TextBox>
+
+                </div>
            </div>
             <div class="row">
                 <div class="col-2  border border-dark basliklar">EKLERİ</div>
                 <div class="col-10 border border-dark">
                     <div class="row">
                         <div class="col-4">1.Etik Kurul İzni</div>
-                        <div class="col-4">Gerekmiyor <input type="CheckBox"> </div>
-                        <div class="col-4">Belge Var <input type="CheckBox"></div>
-
+                        <div class="col-4">Gerekmiyor 
+                            <asp:CheckBox ID="chkGerekmiyorEtik" runat="server" Class="etik" OnCheckedChanged="chkGerekmiyorEtik_CheckedChanged" />
+                            &nbsp;</div>
+                        <div class="col-4">Belge Var 
+                            <asp:CheckBox ID="chkbelgevarEtik" runat="server" Class="etik" OnCheckedChanged="chkbelgevarEtik_CheckedChanged" />
+                        </div>
+                        <div class="col-4" id="divTest" style="display: none;"> 
+                            <asp:Panel ID="Panel2" runat="server">
+                             Belgeyi Yükleyiniz   <asp:FileUpload ID="FUetikKurulizni" runat="server" />
+                                  
+                            </asp:Panel>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-4">2.Veri Kullanım İzni</div>
-                        <div class="col-4">Gerekmiyor <input type="CheckBox"></div>
-                        <div class="col-4">Belge Var <input type="CheckBox"></div>
+                        <div class="col-4">Gerekmiyor 
+                            <asp:CheckBox ID="chkGerekmiyorVeri" runat="server" Class="veri" OnCheckedChanged="chkGerekmiyorVeri_CheckedChanged" />
+                        </div>
+                        <div class="col-4">Belge Var 
+                            <asp:CheckBox ID="chkveri" runat="server" Class="veri" OnCheckedChanged="chkveri_CheckedChanged" />
+                        </div>
+                        <div class="col-4" id="divVeri" style="display: none;"> 
+                            <asp:Panel ID="Panel3" runat="server">
+                             Belgeyi Yükleyiniz   <asp:FileUpload ID="FUVeri" runat="server" />
+                                  
+                            </asp:Panel>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-4">3.Kurum / Kuruluş İzni</div>
-                        <div class="col-4">Gerekmiyor <input type="CheckBox"></div>
-                        <div class="col-4">Belge Var <input type="CheckBox"></div>
+                        <div class="auto-style1">Gerekmiyor 
+                            <asp:CheckBox ID="chkGerekmiyorkurum" runat="server" Class="kurum" OnCheckedChanged="chkGerekmiyorkurum_CheckedChanged" />
+                        </div>
+                        <div class="col-4">Belge Var 
+                            <asp:CheckBox ID="chkbelgevarkurum" runat="server" Class="kurum" OnCheckedChanged="chkbelgevarkurum_CheckedChanged" />
+                        </div>
+                        <div class="col-4" id="divKurum" style="display: none;"> 
+                            <asp:Panel ID="Panel4" runat="server">
+                             Belgeyi Yükleyiniz   <asp:FileUpload ID="FUKurum" runat="server" />
+                                  
+                            </asp:Panel>
+                        </div>
                     </div>
                     <div class="row"><div class="col-12">4.Tez Konusu ve Planı (FORM-31)</div></div>
                     <div class="row">
                             <div class="col-7">5.Fikir Hak Sahipliği Beyanı(İsteğe Bağlı–FORM-32)</div>
-                            <div class="col-3">Gerekmiyor <input type="CheckBox"></div>
-                            <div class="col-2">Belge Var <input type="CheckBox"></div>
+                            <div class="col-3">Gerekmiyor 
+                                <asp:CheckBox ID="chkGerekmiyorFikir" runat="server" Class="fikir" OnCheckedChanged="chkGerekmiyorFikir_CheckedChanged" />
+                            </div>
+                            <div class="col-2">Belge Var 
+                                <asp:CheckBox ID="chkbelgevarFikir" runat="server" Class="fikir" OnCheckedChanged="chkbelgevarFikir_CheckedChanged" />
+                            </div>
+                        <div class="col-4" id="divFikir" style="display: none;"> 
+                            <asp:Panel ID="Panel5" runat="server">
+                             Belgeyi Yükleyiniz   <asp:FileUpload ID="FUFikir" runat="server" />
+                                  
+                            </asp:Panel>
+                        </div>
                     </div>
                 </div>
 
@@ -153,9 +383,15 @@
                 <div class="col-8 border border-dark">
                     <div class="row"><div class="col text-lg-center">Öğrenci Derslerini</div></div>
                     <div class="row"><u>Enstitü Öğrenci İşleri</u></div>
-                    <div class="row"><div class="col text-lg-right">Tamamlamıştır <input type="CheckBox"></div></div>
-                    <div class="row"><div class="col text-lg-right">Tamamlamamıştır <input type="CheckBox"></div></div>
-                    <div class="row">Karar Tarihi:  ____/____/20____       Karar No:</div>
+                    <div class="row"><div class="col text-lg-right">Tamamlamıştır 
+                        <asp:CheckBox ID="chkTamamlamistir" runat="server" Class="tamamlama" OnCheckedChanged="chkTamamlamistir_CheckedChanged" />
+                        </div></div>
+                    <div class="row"><div class="col text-lg-right">Tamamlamamıştır 
+                        <asp:CheckBox ID="chkTamamlanmamisdir" runat="server" Class="tamamlama" OnCheckedChanged="chkTamamlanmamisdir_CheckedChanged" />
+                        </div></div>
+                    <div class="row">Karar Tarihi:
+                        <input id="KararTarih2" name="KararTarih0" type="date"> Karar No:<asp:TextBox ID="txtKararNo" runat="server"></asp:TextBox>
+                        </input></div>
 
                 </div>
                 <div class="col-4 border border-dark text-lg-center">
@@ -183,17 +419,9 @@
             
                 
         </div>
-
-        
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <form id="form1" runat="server">
-    <div>
-    <asp:button runat="server" text="Button" OnClick="Unnamed1_Click" />
-
-    </div>
-        </form>
+            </asp:Panel>
+        <center><asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Kaydet" /><asp:Button ID="printButton" runat="server" Text="Yazdır" OnClientClick="javascript:window.print();" /></center>
+    
+            </form>
 </body>
-
 </html>

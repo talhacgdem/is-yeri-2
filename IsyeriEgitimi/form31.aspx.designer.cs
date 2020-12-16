@@ -10,7 +10,7 @@
 namespace IsyeriEgitimi {
     
     
-    public partial class form32 {
+    public partial class form31 {
         
         /// <summary>
         /// form1 control.
@@ -22,40 +22,31 @@ namespace IsyeriEgitimi {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Panel1 control.
+        /// CheckBox33 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox33;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// CheckBox34 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox34;
         
         /// <summary>
-        /// KararSayi control.
+        /// CheckBox35 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText KararSayi;
-        
-        /// <summary>
-        /// CheckBox1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox35;
         
         /// <summary>
         /// chkKabulEdildi control.
@@ -67,346 +58,283 @@ namespace IsyeriEgitimi {
         protected global::System.Web.UI.WebControls.CheckBox chkKabulEdildi;
         
         /// <summary>
-        /// chkDuzeltmeYapildiKabulEdildi control.
+        /// chkKabulEdildi0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkDuzeltmeYapildiKabulEdildi;
+        protected global::System.Web.UI.WebControls.CheckBox chkKabulEdildi0;
         
         /// <summary>
-        /// txtOgrenciAdSoyad control.
+        /// CheckBox26 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOgrenciAdSoyad;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox26;
         
         /// <summary>
-        /// txtOgrenciNo control.
+        /// CheckBox27 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOgrenciNo;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox27;
         
         /// <summary>
-        /// txtBilimDali control.
+        /// CheckBox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBilimDali;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
         
         /// <summary>
-        /// txtDanisman control.
+        /// CheckBox14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDanisman;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox14;
         
         /// <summary>
-        /// chkilkteklif control.
+        /// CheckBox3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkilkteklif;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox3;
         
         /// <summary>
-        /// chkdegisiklik control.
+        /// CheckBox15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkdegisiklik;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox15;
         
         /// <summary>
-        /// txtTezBasligi control.
+        /// CheckBox4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTezBasligi;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox4;
         
         /// <summary>
-        /// txtAnahtarKelime control.
+        /// CheckBox16 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAnahtarKelime;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox16;
         
         /// <summary>
-        /// txtIngilzce control.
+        /// CheckBox5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIngilzce;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox5;
         
         /// <summary>
-        /// chkturkce control.
+        /// CheckBox17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkturkce;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox17;
         
         /// <summary>
-        /// chkingilizce control.
+        /// CheckBox6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkingilizce;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox6;
         
         /// <summary>
-        /// chbCalismaTarzi control.
+        /// CheckBox18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chbCalismaTarzi;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox18;
         
         /// <summary>
-        /// chbCalismaTeorik control.
+        /// CheckBox7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chbCalismaTeorik;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox7;
         
         /// <summary>
-        /// chbCalismaSimilasyon control.
+        /// CheckBox19 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chbCalismaSimilasyon;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox19;
         
         /// <summary>
-        /// chbCalismaSistemYazilim control.
+        /// CheckBox8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chbCalismaSistemYazilim;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox8;
         
         /// <summary>
-        /// chbCalismaSaha control.
+        /// CheckBox20 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chbCalismaSaha;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox20;
         
         /// <summary>
-        /// txtEndistruA control.
+        /// CheckBox9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEndistruA;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox9;
         
         /// <summary>
-        /// txtEndistruB control.
+        /// CheckBox21 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEndistruB;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox21;
         
         /// <summary>
-        /// chkGerekmiyorEtik control.
+        /// CheckBox10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkGerekmiyorEtik;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox10;
         
         /// <summary>
-        /// chkbelgevarEtik control.
+        /// CheckBox22 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkbelgevarEtik;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox22;
         
         /// <summary>
-        /// Panel2 control.
+        /// CheckBox11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox11;
         
         /// <summary>
-        /// FUetikKurulizni control.
+        /// CheckBox23 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FUetikKurulizni;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox23;
         
         /// <summary>
-        /// chkGerekmiyorVeri control.
+        /// CheckBox12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkGerekmiyorVeri;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox12;
         
         /// <summary>
-        /// chkveri control.
+        /// CheckBox24 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkveri;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox24;
         
         /// <summary>
-        /// Panel3 control.
+        /// CheckBox28 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel3;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox28;
         
         /// <summary>
-        /// FUVeri control.
+        /// CheckBox29 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FUVeri;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox29;
         
         /// <summary>
-        /// chkGerekmiyorkurum control.
+        /// CheckBox30 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkGerekmiyorkurum;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox30;
         
         /// <summary>
-        /// chkbelgevarkurum control.
+        /// CheckBox25 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkbelgevarkurum;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox25;
         
         /// <summary>
-        /// Panel4 control.
+        /// CheckBox31 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel4;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox31;
         
         /// <summary>
-        /// FUKurum control.
+        /// CheckBox32 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FUKurum;
-        
-        /// <summary>
-        /// chkGerekmiyorFikir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkGerekmiyorFikir;
-        
-        /// <summary>
-        /// chkbelgevarFikir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkbelgevarFikir;
-        
-        /// <summary>
-        /// Panel5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel5;
-        
-        /// <summary>
-        /// FUFikir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FUFikir;
-        
-        /// <summary>
-        /// chkTamamlamistir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkTamamlamistir;
-        
-        /// <summary>
-        /// chkTamamlanmamisdir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkTamamlanmamisdir;
-        
-        /// <summary>
-        /// txtKararNo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtKararNo;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox32;
         
         /// <summary>
         /// Button1 control.
