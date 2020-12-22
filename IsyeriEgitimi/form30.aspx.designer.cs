@@ -85,6 +85,24 @@ namespace IsyeriEgitimi {
         protected global::System.Web.UI.WebControls.TextBox txtOgrenciAdSoyad;
         
         /// <summary>
+        /// btnOgrimza control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnOgrimza;
+        
+        /// <summary>
+        /// lblOgrimza control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOgrimza;
+        
+        /// <summary>
         /// txtOgrenciNo control.
         /// </summary>
         /// <remarks>
@@ -110,6 +128,15 @@ namespace IsyeriEgitimi {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDanisman;
+        
+        /// <summary>
+        /// btnDanimza control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDanimza;
         
         /// <summary>
         /// chkilkteklif control.

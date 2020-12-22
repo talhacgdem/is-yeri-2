@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
+                        <div class="small">Oturum Türü:</div>
                         Öğrenci
                     </div>
                 </nav>
@@ -147,7 +147,10 @@
                         <div class="card mb-4">
                             <div class="card-body">
                                 <p class="mb-0 text-justify" ><h6> Form-30'u doldurmak için <a href="form30.aspx">tıklayınız</a></h6><br />
-                               <h6>From-31'i doldurmak için <a href="form31.aspx">tıklayınız</a></h6></p>
+                               <h6>From-31'i doldurmak için <a href="form31.aspx">tıklayınız</a></h6><br />
+                                    <h6>From-32'i doldurmak için <a href="form32.aspx">tıklayınız</a></h6><br />
+                                    <h6>From-33'i doldurmak için <a href="form33.aspx">tıklayınız</a></h6><br />
+                                </p>
                            </div>
                         </div></section>
                     </div>

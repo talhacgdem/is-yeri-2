@@ -224,7 +224,7 @@
                      <div class="col-2 border border-dark basliklar">Adı ve Soyadı</div>
                            <div class="col-6 border border-dark"><asp:TextBox ID="txtOgrenciAdSoyad" runat="server" BorderWidth="0px" Width="450px" CssClass="auto-style2"></asp:TextBox>
 </div>
-                            <div class="col-4 border border-dark">İmza:</div>
+                            <div class="col-4 border border-dark">İmza:<asp:Button Text="imzala" runat="server" ID="btnOgrimza" OnClick="btnOgrimza_Click" /><asp:Label Text="" runat="server" ID="lblOgrimza" Visible="false" /></div>
                   </div>
                 <div class="row"><div class="col-2 border border-dark basliklar">Öğrenci No</div>
                 <div class="col-10 border border-dark">
@@ -243,7 +243,7 @@
                     <asp:TextBox ID="txtDanisman" runat="server" BorderWidth="0px" Width="555px"></asp:TextBox>
 
                     </div>
-                            <div class="col-4 border border-dark">İmza:</div>
+                            <div class="col-4 border border-dark">İmza:<asp:Button Text="imzala" runat="server" ID="btnDanimza" /></div>
                 </div>
                         
                 </div>

@@ -371,5 +371,12 @@ namespace IsyeriEgitimi
             }
 
         }
+
+        protected void btnOgrimza_Click(object sender, EventArgs e)
+        {
+            lblOgrimza.Text = DateTime.Now.ToString();
+            btnOgrimza.Visible = false;
+            lblOgrimza.Visible = true;
+        }
     }
 }

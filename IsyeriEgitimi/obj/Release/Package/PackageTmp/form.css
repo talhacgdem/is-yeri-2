@@ -1,0 +1,33 @@
+﻿body {
+    
+
+    
+}
+* {
+    font-family: Cambria;
+}
+.basliklar{
+    font-size:15px;
+    font-weight:bold;
+}
+#wrapper {
+    width: 950px;
+    height:auto;
+    margin: 0 auto;
+   
+}
+#ust {
+    border: 1px solid;
+}
+#alt {
+    border: 1px solid;
+}
+#ogrenci {
+    border: 1px solid;
+}
+#TextBoxOy, #TextBoxOy2{
+    width:30px;
+}
+.check{
+    font-size:12px;
+}

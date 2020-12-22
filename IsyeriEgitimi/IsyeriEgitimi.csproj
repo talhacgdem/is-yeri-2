@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +77,16 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NReco.PdfGenerator, Version=1.2.0.0, Culture=neutral, PublicKeyToken=231663d50a41b451, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.PdfGenerator.1.2.0\lib\net45\NReco.PdfGenerator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net451\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,14 +105,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="danisman.aspx" />
     <Content Include="default.aspx" />
     <Content Include="form30.aspx" />
     <Content Include="form31.aspx" />
+    <Content Include="form32.aspx" />
+    <Content Include="form33.aspx" />
     <Content Include="ogrenci.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="isYeri.bak" />
+    <None Include="Properties\PublishProfiles\form30 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -114,12 +130,23 @@
     <Content Include="form.css" />
     <Content Include="resim\form30.jpg" />
     <Content Include="resim\form31.jpg" />
+    <Content Include="resim\form32.jpg" />
+    <Content Include="resim\form33.jpg" />
     <Content Include="resim\logo.jpg" />
     <Content Include="js\scripts.js" />
     <Content Include="css\styles.css" />
+    <Content Include="temalar\guncelle.png" />
+    <Content Include="temalar\sil.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="danisman.aspx.cs">
+      <DependentUpon>danisman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="danisman.aspx.designer.cs">
+      <DependentUpon>danisman.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,6 +168,20 @@
     <Compile Include="form31.aspx.designer.cs">
       <DependentUpon>form31.aspx</DependentUpon>
     </Compile>
+    <Compile Include="form32.aspx.cs">
+      <DependentUpon>form32.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form32.aspx.designer.cs">
+      <DependentUpon>form32.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="form33.aspx.cs">
+      <DependentUpon>form33.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form33.aspx.designer.cs">
+      <DependentUpon>form33.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,6 +198,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="dosyalar\" />
+    <Folder Include="form31pdf\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
