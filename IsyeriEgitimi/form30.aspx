@@ -7,6 +7,7 @@
     <title></title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
     <script type="text/javascript">
         $(document).ready(function () {
             $(".test input:checkbox").on('change', function () {
@@ -143,6 +144,8 @@
             </div>
 
         </div>
+
+
         <div class="container-fluid" id="alt">
             <div class="text-center mt-2">
                 
@@ -218,6 +221,13 @@
             </div>
            
             </div> 
+
+
+
+
+
+
+
         <div class="container-fluid" id="ogrenci">
                 <div class="row border border-dark"><div class="font-weight-bold">I - ÖĞRENCİ BİLGİLERİ</div></div>
                  <div class="row">
@@ -247,6 +257,12 @@
                 </div>
                         
                 </div>
+
+
+
+
+
+
         <div class="container-fluid" id="tez">
             <div class="row border border-dark"><div class="font-weight-bold">II - TEZ KONUSU BİLGİLERİ</div></div>
             <div class="row border border-dark">
@@ -377,6 +393,10 @@
             </div>
 
         </div>
+
+
+
+
         <div class="container-fluid" id="enstitu">
             <div class="row border border-dark"><div class="font-weight-bold">III – ENSTİTÜ YÖNETİM KURULU KARARI</div></div>
             <div class="row">

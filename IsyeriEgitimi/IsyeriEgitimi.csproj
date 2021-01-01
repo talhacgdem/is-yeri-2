@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.29.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.29\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -105,12 +108,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\form.css" />
+    <Content Include="css\form32.css" />
     <Content Include="danisman.aspx" />
     <Content Include="default.aspx" />
     <Content Include="form30.aspx" />
+    <Content Include="form30nn.aspx" />
     <Content Include="form31.aspx" />
+    <Content Include="form31nn.aspx" />
     <Content Include="form32.aspx" />
+    <Content Include="form32nn.aspx" />
     <Content Include="form33.aspx" />
+    <Content Include="form33nn.aspx" />
+    <Content Include="form35nn.aspx" />
     <Content Include="ogrenci.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -129,9 +139,14 @@
     <Content Include="Global.asax" />
     <Content Include="form.css" />
     <Content Include="resim\form30.jpg" />
+    <Content Include="resim\form30.png" />
     <Content Include="resim\form31.jpg" />
+    <Content Include="resim\form31.png" />
     <Content Include="resim\form32.jpg" />
+    <Content Include="resim\form32.png" />
     <Content Include="resim\form33.jpg" />
+    <Content Include="resim\form33.PNG" />
+    <Content Include="resim\form35.PNG" />
     <Content Include="resim\logo.jpg" />
     <Content Include="js\scripts.js" />
     <Content Include="css\styles.css" />
@@ -161,12 +176,26 @@
     <Compile Include="form30.aspx.designer.cs">
       <DependentUpon>form30.aspx</DependentUpon>
     </Compile>
+    <Compile Include="form30nn.aspx.cs">
+      <DependentUpon>form30nn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form30nn.aspx.designer.cs">
+      <DependentUpon>form30nn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="form31.aspx.cs">
       <DependentUpon>form31.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="form31.aspx.designer.cs">
       <DependentUpon>form31.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="form31nn.aspx.cs">
+      <DependentUpon>form31nn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form31nn.aspx.designer.cs">
+      <DependentUpon>form31nn.aspx</DependentUpon>
     </Compile>
     <Compile Include="form32.aspx.cs">
       <DependentUpon>form32.aspx</DependentUpon>
@@ -175,6 +204,13 @@
     <Compile Include="form32.aspx.designer.cs">
       <DependentUpon>form32.aspx</DependentUpon>
     </Compile>
+    <Compile Include="form32nn.aspx.cs">
+      <DependentUpon>form32nn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form32nn.aspx.designer.cs">
+      <DependentUpon>form32nn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="form33.aspx.cs">
       <DependentUpon>form33.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,6 +218,21 @@
     <Compile Include="form33.aspx.designer.cs">
       <DependentUpon>form33.aspx</DependentUpon>
     </Compile>
+    <Compile Include="form33nn.aspx.cs">
+      <DependentUpon>form33nn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form33nn.aspx.designer.cs">
+      <DependentUpon>form33nn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="form35nn.aspx.cs">
+      <DependentUpon>form35nn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form35nn.aspx.designer.cs">
+      <DependentUpon>form35nn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="genel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

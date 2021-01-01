@@ -170,7 +170,10 @@ namespace IsyeriEgitimi
 
             
             
+
             }
+
+            dr.Close();
             sorgu = "SELECT adi,soyadi FROM danisman WHERE danisman_id = '" + danismanId + "'";
             komut = new SqlCommand(sorgu, baglanti);
             dr = komut.ExecuteReader();
@@ -181,6 +184,8 @@ namespace IsyeriEgitimi
                 danismanTxtBox.Text = dr["adi"].ToString() + " " + dr["soyadi"].ToString();
                 dr.Close();
             }
+
+            dr.Close();
             sorgu = "SELECT baslik FROM tez WHERE danisman_id = '" + danismanId + "'";
             komut = new SqlCommand(sorgu, baglanti);
             dr = komut.ExecuteReader();

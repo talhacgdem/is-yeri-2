@@ -158,7 +158,10 @@
                     <div class="col-10 border border-dark basliklar">
                         <asp:TextBox ID="tezbaslikTxtBox" runat="server" /><br /></div>
                 </div>
-                </asp:Panel><br />
+                </asp:Panel>
+            
+            <br />
+
             <asp:Panel runat="server" ID="tez1" CssClass="container-fluid border border-dark" Visible="true">
                     <div class="row">
                     <div class="col-12 border border-dark"><strong>1. TEZİN AMACI</strong><br/>Çalışmanın amacı en fazla 3-5 cümle ile ifade edilmeli, tanımlama bilgilerinden kaçınılmalıdır. Birden fazla amaç varsa maddeler halinde verilmelidir.</div>
@@ -174,6 +177,7 @@
                     </div>
                 <asp:Button ID="btnTez1s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez1s_Click" />
                 </asp:Panel>
+
             <asp:Panel runat="server" ID="tez2" CssClass="container-fluid border border-dark" Visible="false">
                     <div class="row">
                     <div class="col-12 border border-dark"><strong>2.  ÇALIŞMA GEREKÇESİ</strong><br/>
@@ -203,6 +207,8 @@
                 <asp:Button ID="btnTez2o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez2o_Click" />
                 <asp:Button ID="btnTez2s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez2s_Click" />
                 </asp:Panel>
+
+
             <asp:Panel runat="server" ID="tez3" CssClass="container-fluid border border-dark" Visible="false">
                     <div class="row">
                     <div class="col-12 border border-dark"><strong>3.  KONU ve KAPSAM</strong><br/>
@@ -242,6 +248,8 @@
                  <asp:Button ID="btnTez3o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez3o_Click" />
                 <asp:Button ID="btnTez3s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez3s_Click"/>
                 </asp:Panel>
+
+
             <asp:Panel runat="server" ID="tez4" CssClass="container-fluid border border-dark" Visible="false">
                     <div class="row">
                     <div class="col-12 border border-dark"><strong>4. YÖNTEM</strong><br/>
@@ -259,6 +267,8 @@
                 <asp:Button ID="btnTez4o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez4o_Click" />
                 <asp:Button ID="btnTez4s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez4s_Click"  />
                 </asp:Panel>
+
+
             <asp:Panel runat="server" ID="tez5" CssClass="container-fluid border border-dark" Visible="false">
                     <div class="row">
                     <div class="col-12 border border-dark"><strong>5.  ÖZGÜN DEĞER</strong><br/>
@@ -273,6 +283,8 @@
                  <asp:Button ID="btnTez5o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez5o_Click" />
                 <asp:Button ID="btnTez5s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez5s_Click" />
                 </asp:Panel>
+
+
             <asp:Panel runat="server" ID="tez6" CssClass="container-fluid border border-dark" Visible="false">
                         <div class="row">
                         <div class="col-12 border border-dark"><strong>6.  YAYGIN ETKİ</strong><br/>
@@ -287,6 +299,8 @@
                  <asp:Button ID="btnTez6o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez6o_Click" />
                 <asp:Button ID="btnTez6s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez6s_Click" />
                     </asp:Panel>
+
+
             <asp:Panel runat="server" ID="tez7" CssClass="container-fluid border border-dark" Visible="false">
                         <div class="row">
                         <div class="col-12 border border-dark"><strong>7.  KURUM DIŞINA BAĞIMLILIK</strong><br/>
@@ -300,6 +314,8 @@
                  <asp:Button ID="btnTez7o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez7o_Click" />
                 <asp:Button ID="btnTez7s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez7s_Click" />
             </asp:Panel>
+
+
             <asp:Panel runat="server" ID="tez8" CssClass="container-fluid border border-dark" Visible="false">
                         <div class="row">
                         <div class="col-12 border border-dark"><strong>8.  ÇALIŞMA TAKVİMİ</strong><br/>
@@ -322,6 +338,8 @@
                      <asp:Button ID="btnTez8o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez8o_Click" />
                     <asp:Button ID="btnTez8s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez8s_Click" />
                     </asp:Panel>
+
+
             <asp:Panel runat="server" ID="tez9" CssClass="container-fluid border border-dark" Visible="false">
                         <div class="row">
                         <div class="col-12 border border-dark"><strong>9. ENSTİTÜ İSTATİSTİK AMAÇLI SORULARI</strong><br/>
@@ -418,6 +436,9 @@
                     <asp:Button ID="btnTez9o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez9o_Click" />
                     <asp:Button ID="btnTez9s" runat="server" Text="Sonraki" CssClass="btn-primary float-right" OnClick="btnTez9s_Click" />
                     </asp:Panel>
+
+
+
             <asp:Panel runat="server" ID="tez10" CssClass="container-fluid border border-dark" Visible="false">
                         <div class="row">
                         <div class="col-12 border border-dark"><strong>10. AKADEMİK ÇALIŞMA BEYANNAMESİ</strong><br/></div>
@@ -444,6 +465,8 @@
                     <asp:Button ID="btnTez10o" runat="server" Text="Önceki" CssClass="btn-primary float-left" OnClick="btnTez10o_Click" />
                     <asp:Button ID="btnTez10s" runat="server" Text="Bitir" CssClass="btn-primary float-right" OnClick="btnTez10s_Click" />
                     </asp:Panel>
+
+
             <center>
                 <asp:Button ID="Button1" runat="server"  Text="PDF İndir" OnClick="Button1_Click" />
                 <asp:Button ID="printButton" runat="server" OnClick="printButton_Click" OnClientClick="javascript:window.print();" Text="Yazdır" />
