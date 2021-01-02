@@ -6,11 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Form-30 Fen Bilimleri Enstitüsü</title>
       
+
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="css/form32.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
      <script type="text/javascript">
          $(document).ready(function () {
@@ -199,9 +200,11 @@
                     <tr>
                         <td>Anabilim Dalımız yüksek lisans öğrencisinin danışmanı ile birlikte önerdiği tez 
                             konusu aşağıda verilmiş olup tez çalışmalarının Anabilim Dalımız bünyesinde
-                            yürütülmesinin uygun olduğuna ve konunun Enstitüye arzına <strong> oybirliği 
+                            yürütülmesinin uygun olduğuna ve konunun Enstitüye arzına 
+                            <strong> <label for="CheckBox1">oybirliği </label>
                             <asp:CheckBox ID="CheckBox1" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" />
-                            &nbsp;/ oyçokluğu
+                            &nbsp;
+                                / oyçokluğu
                             <input id="TextBoxOy" name="TextBoxOy" type="text" size="2"> /
                             <input id="TextBoxOy2" name="TextBoxOy2" type="text" size="2"></input></input></strong> ile karar verilmiştir.</td>
                     </tr>
@@ -209,9 +212,12 @@
             </table><br /><br />
             <div class="row">
                 <div class="col-8">
-                        <asp:CheckBox ID="chkKabulEdildi" Text="" runat="server" Class="test" OnCheckedChanged="chkKabulEdildi_CheckedChanged"></asp:CheckBox><label for="chkKabulEdildi">Önerildiği şekliyle kabul edilmiştir</label>
+                        <asp:CheckBox ID="chkKabulEdildi" Text="" runat="server" Class="test" OnCheckedChanged="chkKabulEdildi_CheckedChanged"></asp:CheckBox>
+                    <label for="chkKabulEdildi"> Önerildiği şekliyle kabul edilmiştir</label>
                     <br />
-                        <asp:CheckBox ID="chkDuzeltmeYapildiKabulEdildi" Text="" runat="server" Class="test" OnCheckedChanged="chkDuzeltmeYapildiKabulEdildi_CheckedChanged"></asp:CheckBox><label for="chkDuzeltmeYapildiKabulEdildi">Düzeltme yapıldıktan sonra kabul edilmiştir </label> 
+                        <asp:CheckBox ID="chkDuzeltmeYapildiKabulEdildi" Text="" runat="server" Class="test" OnCheckedChanged="chkDuzeltmeYapildiKabulEdildi_CheckedChanged"></asp:CheckBox>
+                    
+                    <label for="chkDuzeltmeYapildiKabulEdildi"> Düzeltme yapıldıktan sonra kabul edilmiştir </label> 
                 </div>                  
                 <div class="col-4">
                     <div class="text-center">

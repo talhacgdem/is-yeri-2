@@ -120,6 +120,7 @@
     <Content Include="form33.aspx" />
     <Content Include="form33nn.aspx" />
     <Content Include="form35nn.aspx" />
+    <Content Include="js\form32.js" />
     <Content Include="ogrenci.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

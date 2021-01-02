@@ -153,6 +153,8 @@
                                     <h6>From-30nn'i doldurmak için <a href="form30nn.aspx">tıklayınız</a></h6><br />
                                     <h6>From-31nn'i doldurmak için <a href="form31nn.aspx">tıklayınız</a></h6><br />
                                     <h6>From-32nn'i doldurmak için <a href="form32nn.aspx">tıklayınız</a></h6><br />
+                                    <h6>From-33nn'i doldurmak için <a href="form33nn.aspx">tıklayınız</a></h6><br />
+                                    <h6>From-35nn'i doldurmak için <a href="form35nn.aspx">tıklayınız</a></h6><br />
                                 </p>
                            </div>
                         </div></section>
