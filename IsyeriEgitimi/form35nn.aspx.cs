@@ -12,11 +12,15 @@ namespace IsyeriEgitimi
         protected void Page_Load(object sender, EventArgs e)
         {
             genel islemler = new genel();
-            string[] abdListesi = islemler.anaBilimDaliCek();
+            string[] abdListesi = islemler.AnaBilimDaliCek(1);
 
-            for (int i = 2; i < abdListesi.Length; i++)
+            
+            foreach (string dal in abdListesi)
             {
-                anabilimDroplist.Items.Add(abdListesi[i]);
+                if (!(dal == "" || dal == null))
+                {
+                    anabilimDroplist.Items.Add(dal);
+                }
             }
         }
     }

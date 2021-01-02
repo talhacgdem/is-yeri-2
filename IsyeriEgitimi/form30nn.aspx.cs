@@ -34,11 +34,15 @@ namespace IsyeriEgitimi
 
            
             genel islemler = new genel();
-            string[] abdListesi = islemler.anaBilimDaliCek();
-
-            for (int i = 2; i < abdListesi.Length; i++)
+            string[] abdListesi = islemler.AnaBilimDaliCek(0);
+            
+            
+            foreach(string dal in abdListesi)
             {
-                DropDownList1.Items.Add(abdListesi[i]);
+                if (!(dal == "" || dal == null))
+                {
+                    DropDownList1.Items.Add(dal);
+                }
             }
            
         }
